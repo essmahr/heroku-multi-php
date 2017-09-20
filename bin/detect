@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-if [ -f $1/.buildpacks ]; then
-  echo "Multipack"
+if [ -d $1/apps ]; then
+  echo "Yopify"
   exit 0
 else
-  echo "no .buildpacks file"
+  echo "no apps directory"
   exit 1
 fi
